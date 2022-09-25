@@ -1,0 +1,51 @@
+@import './normalize.css';
+
+:root{
+    /* 文本颜色 */
+    --color-text: #666;
+    /* 高亮文本颜色 */
+    --color-high-text: #42bBaa;
+    /* 标题颜色 */
+    --color-tint: #42b983;
+    /* 背景颜色 */
+    --color-background:#FFFFFF;
+    /* 统一字体尺寸 */
+    --font-size:14px;
+    /* 行高 */
+    --line-height:1.5;
+}
+
+/* 在所有伪元素之前和之后插入内容 */
+*,
+*::before,*::after{
+    margin: 0;
+    padding: 0;
+    /* 盒子尺寸 */
+    box-sizing: border-box;
+}
+
+body{
+    user-select: none; /* 禁止用户选择中文字或图片*/
+    background: var(--color-background); /*背景颜色*/
+    color:var(--color-text);
+    /* vh就是当前屏幕可见高度的1%，也就是说
+    height:100vh == height:100%;
+    设置height:100%该元素不会被撑开，
+    但是设置height:100vh，该元素会被撑开屏幕高度一致。 
+    vw是相对于屏幕可见宽度来设置的,
+    width:100%，被设置元素的宽度是按照父元素的宽度来设置
+    */
+    width: 100vw;
+}
+
+a{
+    color: var(--color-text);
+    text-decoration: none;
+}
+
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
